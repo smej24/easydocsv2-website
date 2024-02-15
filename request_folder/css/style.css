@@ -1,0 +1,145 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fbfef5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        .sidenav {
+            height: 100%;
+            width: 350px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #fbfef5;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .steps {
+            height: 100%;
+            width: 350px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #03823f;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidenav img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .sidenav h2 {
+            color: #3db47a;
+            margin-bottom: 200px;
+            text-align: right;
+            margin-right: 40px;
+            font-size: 42px;
+        }
+
+        .sidenav a {
+            position: relative;
+            text-align: left;
+            padding: 8px 8px 8px 16px; 
+            text-decoration: none;
+            font-size: 20px;
+            color: #7e8178;
+            display: block;
+            margin-bottom: 40px;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+        .sidenav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -16px;
+            height: 100%;
+            width: 7px;
+            background-color: #03823f; 
+            display: none; 
+        }
+
+        .sidenav a:hover::before {
+            display: block; 
+        }
+
+        .sidenav a.logout {
+            margin-top: 200px;
+            margin-left: 50px; 
+            font-size: 18px;
+        }
+
+        .content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content p {
+    font-size: 26px;
+    color: #7e8178;
+}
+
+.content h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.document-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 200px;
+}
+
+.document-list li {
+    text-align: center;
+}
+
+.document-list label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.document-list a {
+    display: block;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.document-list a:hover {
+    background-color: #3db47a;
+}
+
+.document-list img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}

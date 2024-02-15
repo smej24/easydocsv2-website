@@ -1,0 +1,250 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #2db06b;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.left-content {
+    text-align: center;
+    margin-right: 1100px;
+}
+
+.left-content img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.left-content h1{
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-content p{
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 100px;
+    line-height: 120%;
+}
+
+form {
+    height: 952px;
+    width: 1100px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 71.3%;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px auto;
+    border-top-left-radius: 150px;
+}
+
+form * {
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form ::placeholder {
+    color: gray;
+    opacity: 0.8;
+    font-family: sans-serif;
+}
+
+input[type="text"],
+input[type="varchar"],
+input[type="int"],
+input[type="password"] {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+
+.form{
+height: 420px;
+width: 420px;
+background-color: white;
+position: absolute;
+transform: translate(-50%,-50%);
+top: 50%;
+left: 50%;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+padding: 50px 35px;
+border-radius: 30px;
+}
+
+.form-back{
+height: 590px;
+width: 300px;
+background-color: white;
+position: absolute;
+transform: translate(-50%,-50%);
+top: 50%;
+left: 50%;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+border-radius: 30px;
+padding: 25px 5px;
+}
+
+.form h3{
+font-family: sans-serif;
+font-size: 24px;
+font-weight: bolder;
+text-align: center;
+color: #2db06b;
+margin-bottom: 10px;
+}
+
+.form p {
+color: gray;
+text-align: center;
+font-size: 18px;
+font-family: sans-serif;
+}
+
+.form label{
+display: block;
+margin-top: 30px;
+font-size: 16px;
+font-weight: 500;
+font-family: sans-serif;
+font-weight: bold;
+color: gray;
+}
+input{
+display: block;
+height: 50px;
+width: 100%;
+background-color: rgba(255,255,255,0.07);
+border-radius: 3px;
+padding: 0 10px;
+margin-top: 8px;
+font-size: 16px;
+font-weight: 300;
+border: 1px solid rgba(255, 255, 255, 0.507);
+font-family: sans-serif;
+}
+::placeholder{
+color: #e5e5e5;
+opacity: 0.8;
+font-family: sans-serif;
+}
+.button{
+margin: 40px 80px 0 80px;
+width: 50%;
+background-color: #2db06b;
+color: white;
+padding: 15px 0;
+font-size: 18px;
+font-weight: 600;
+border-radius: 25px;
+cursor: pointer;
+font-family: sans-serif;
+border: none;
+}
+.button:hover{
+opacity: 0.8;
+}
+.register{
+text-align: center;
+margin-top: 50px;
+}
+.register a{
+text-decoration: none;
+color: gray;
+font-style: italic;
+font-family: sans-serif;
+font-size: 14px;
+}
+.register:hover{
+text-decoration: underline gray;
+text-underline-offset: 3px;
+}
+
+ul {
+white-space: nowrap;
+text-align: center;
+margin-left: -13px;
+}
+
+li{
+width: 50%;
+display: inline-block;
+font-size: 26px;
+}
+
+li a {
+font-family: sans-serif;
+color: gray;
+font-weight: bold;
+text-decoration: none;
+}
+
+li a:hover{
+text-decoration: underline #2db06b;
+text-underline-offset: 15px; 
+text-decoration-thickness: 6px;
+}
+
+.form-back .button{
+margin: 460px 80px 0 70px;
+width: 50%;
+background-color: #2db06b;
+color: white;
+padding: 15px 0;
+font-size: 18px;
+border-radius: 15px;
+cursor: pointer;
+font-family: sans-serif;
+border: none;
+}
+
+.copyright {
+position: absolute;
+bottom: 30px;
+font-size: 14px;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+}
+
+.copyright-span {
+color: #2db06b;
+}

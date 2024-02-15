@@ -1,0 +1,170 @@
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #fbfef5;
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 350px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #fbfef5;
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .steps {
+                height: 100%;
+                width: 350px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                background-color: #03823f;
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .sidenav img {
+                width: 80px;
+                border-radius: 50%;
+            }
+
+            .sidenav h2 {
+                color: #3db47a;
+                margin-bottom: 200px;
+                text-align: right;
+                margin-right: 40px;
+                font-size: 42px;
+            }
+
+            .sidenav a {
+                position: relative;
+                text-align: left;
+                padding: 8px 8px 8px 16px; 
+                text-decoration: none;
+                font-size: 20px;
+                color: #7e8178;
+                display: block;
+                margin-bottom: 40px;
+                margin-left: 50px;
+                font-weight: bold;
+            }
+
+            .sidenav a:hover {
+                color: black;
+            }
+
+            .sidenav a::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -16px;
+                height: 100%;
+                width: 7px;
+                background-color: #03823f; 
+                display: none; 
+            }
+
+            .sidenav a:hover::before {
+                display: block; 
+            }
+
+            .sidenav a.logout {
+                margin-top: 200px;
+                margin-left: 50px; 
+                font-size: 18px;
+            }
+
+            .content {
+                text-align: center;
+                margin-top: 66px;
+            }
+
+            .content p {
+                font-size: 26px;
+                color: #7e8178;
+            }
+
+            .content-2 {
+                margin-left: 500px;
+                margin-top: 10px;
+                position: relative;
+            }
+
+            .content-2 img {
+                width: 100%; 
+                margin-bottom: 10px; 
+            }
+
+            .content-2 h2 {
+                position: absolute;
+                right: 40%; 
+                font-size: 45px;
+            }
+
+            .content-2 p.req {
+                position: absolute;
+                top: 24%;
+                right: 50%;
+                font-size: 26px;
+                color: black;
+            }
+
+            .request-button {
+                position: absolute;
+                top: 400px;
+                left: 9%;
+                transform: translateX(-50%);
+                background-color: #03823f;
+                color: white;
+                padding: 20px 30px;
+                border-radius: 3px;
+                font-size: 20px;
+                text-decoration: none;
+                box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.5);
+            }
+
+            .card-container {
+        display: flex;
+        gap: 50px;
+        margin-top: 500px;
+    }
+
+    .card {
+        flex: 0.3;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .card-header {
+        background-color: #03823f;
+        padding: 10px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        text-align: center;
+    }
+
+    .card h3 {
+        color: white;
+        margin: 0;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+

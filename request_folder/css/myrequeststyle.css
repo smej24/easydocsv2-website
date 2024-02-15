@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fbfef5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fbfef5;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.steps {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #03823f;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.sidenav h2 {
+    color: #3db47a;
+    margin-bottom: 200px;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 42px;
+}
+
+.sidenav a {
+    position: relative;
+    text-align: left;
+    padding: 8px 8px 8px 16px; 
+    text-decoration: none;
+    font-size: 20px;
+    color: #7e8178;
+    display: block;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -16px;
+    height: 100%;
+    width: 7px;
+    background-color: #03823f; 
+    display: none; 
+}
+
+.sidenav a:hover::before {
+    display: block; 
+}
+
+.sidenav a.logout {
+    margin-top: 200px;
+    margin-left: 50px; 
+    font-size: 18px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content p {
+    font-size: 26px;
+    color: #7e8178;
+}
+
+.content h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.req p {
+    font-size: 18px;
+    color: black;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.accordion {
+    background-color: #03823f;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.accordion::after {
+    content: '\25B6';
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    transition: 0.4s;
+}
+
+.accordion:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active::after, .accordion:hover::after {
+    content: '\25BC';
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.panel table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+.panel th, .panel td {
+padding: 12px;
+text-align: left;
+border: 1px solid #ddd;
+}
+
+.panel th {
+background-color: rgb(204, 204, 204);
+color: black;
+}
+
+.set-date-button {
+background-color: #03823f; 
+color: white;
+border: none;
+padding: 5px 10px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.status-dropdown {
+padding: 8px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.status-option {
+padding: 8px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+color: black;
+}
+
+
+/* pop up window here styl */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-content li {
+    margin-bottom: 15px;
+}
+
+.field-style {
+    display: block;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-container button:hover {
+    background-color: #0056b3;
+}
